@@ -107,3 +107,8 @@ Initial setup:
 - `rails db:seed`
 - create serializers
 - `rails g controller Games`
+- add bower and angular gems
+- `rails g bower_rails:initialize json`
+- Edit bower.json as needed
+- `npm install bower -g`
+- `rails bower:install`
