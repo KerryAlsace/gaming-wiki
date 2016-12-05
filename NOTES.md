@@ -19,6 +19,7 @@ User has many ratings
 
 <!-- GAMES -->
 Game belongs to studio
+Game belongs to genre
 Game has many reviews
 Game has many ratings (has 1 avg rating)
 Game has many platforms through platform_games
@@ -93,4 +94,10 @@ Initial setup:
 - `rails db:migrate`
 - `rails console`
 - Check that you can successfully create a user
-- r`ails g model Game name:string genre_id:integer content:text user_id:integer studio_id:integer`
+- `rails g model Game name:string genre_id:integer content:text studio_id:integer`
+- `rails g model Studio name:string description:text`
+- `rails g model Platform name:string`
+- `rails g model Genre name:string`
+- `rails g model Review title:string content:text user_id:integer game_id:integer`
+- `rails g model Rating rating:integer user_id:integer game_id:integer`
+- `rails db:migrate`

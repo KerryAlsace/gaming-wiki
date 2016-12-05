@@ -3,7 +3,6 @@ class CreateGames < ActiveRecord::Migration[5.0]
     create_table :games do |t|
       t.string :name
       t.text :content
-      t.integer :user_id
       t.integer :studio_id
       t.integer :genre_id
 
