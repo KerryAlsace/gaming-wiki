@@ -102,3 +102,6 @@ Initial setup:
 - `rails g model Rating rating:integer user_id:integer game_id:integer`
 - `rails g model PlatformGames platform_id:integer game_id:integer`
 - `rails db:migrate`
+- test models and migrations in `rails console` and adjust as needed
+- create seed file
+- `rails db:seed`
