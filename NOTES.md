@@ -100,4 +100,5 @@ Initial setup:
 - `rails g model Genre name:string`
 - `rails g model Review title:string content:text user_id:integer game_id:integer`
 - `rails g model Rating rating:integer user_id:integer game_id:integer`
+- `rails g model PlatformGames platform_id:integer game_id:integer`
 - `rails db:migrate`
