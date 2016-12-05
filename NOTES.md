@@ -105,3 +105,5 @@ Initial setup:
 - test models and migrations in `rails console` and adjust as needed
 - create seed file
 - `rails db:seed`
+- create serializers
+- `rails g controller Games`
