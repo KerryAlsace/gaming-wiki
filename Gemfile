@@ -27,6 +27,10 @@ gem 'responders'
 gem 'active_model_serializers'
 # Use Devise for user authorization
 gem 'devise'
+# Use Bower Rails for js packaging
+gem 'bower-rails'
+# Use Angular for front-end
+gem 'angular-rails-templates'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
