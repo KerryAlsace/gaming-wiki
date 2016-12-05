@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  function HomeController() {
+  function HomeController($scope) {
     $scope.name = 'Kerry'
   }
 
