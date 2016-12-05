@@ -8,7 +8,7 @@
   GameController.$inject = ["$scope"]
 
   angular
-    .module('app', ['ui.router', 'templates', 'Devise'])
+    .module('app')
     .controller('GameController', GameController)
     
 }());

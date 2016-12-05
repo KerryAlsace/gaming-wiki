@@ -8,12 +8,12 @@
         .state('home', {
           url: '/',
           templateUrl: 'home/home.html',
-          controller: 'HomeController as vm'
+          controller: 'HomeController as home'
         })
         .state('home.games', {
           url: '/games',
           templateUrl: 'games/games.html',
-          controller: 'GameController as vm'
+          controller: 'GameController as games'
         })
 
       $urlRouterProvider.otherwise('/')

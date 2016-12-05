@@ -8,7 +8,7 @@
   HomeController.$inject = ["$scope"]
 
   angular
-    .module('app', ['ui.router', 'templates', 'Devise'])
+    .module('app')
     .controller('HomeController', HomeController)
     
 }());
