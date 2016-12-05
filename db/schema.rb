@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20161205201726) do
   create_table "games", force: :cascade do |t|
     t.string   "name"
     t.text     "content"
+    t.integer  "user_id"
     t.integer  "studio_id"
     t.integer  "genre_id"
     t.datetime "created_at", null: false
