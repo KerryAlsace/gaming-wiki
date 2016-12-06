@@ -3,9 +3,11 @@
 <div>
   <ul>
     <li ng-repeat="game in games.games">
-      <p>
-        {{ game.name }}
-      </p>
+      <div class="divider"></div>
+      <div class="section">
+        <h5>{{ game.name }}</h5>
+        <p>{{ game.content }}</p>
+      </div>
     </li>
   </ul>
 </div>
