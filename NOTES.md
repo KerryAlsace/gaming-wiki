@@ -66,6 +66,8 @@ Rating belongs to studio through game
 
 # PROCESS
 
+Refer to https://www.youtube.com/watch?v=YNwehQGslcQ&feature=youtu.be
+
 Initial setup:
 
 - `rails new 'gaming-wiki'`

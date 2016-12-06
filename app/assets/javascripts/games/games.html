@@ -1,3 +1,11 @@
-<h1>Games {{ name }}</h1>
+<h4>Games</h4>
 
-<ui-view></ui-view>
+<div>
+  <ul>
+    <li ng-repeat="game in games.games">
+      <p>
+        {{ game.name }}
+      </p>
+    </li>
+  </ul>
+</div>
