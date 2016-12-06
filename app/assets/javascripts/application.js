@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require materialize
 //= require angular
 //= require angular-ui-router
 //= require angular-devise
