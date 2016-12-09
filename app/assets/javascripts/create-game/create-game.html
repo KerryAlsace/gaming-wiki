@@ -1,0 +1,23 @@
+<form name="new-game">
+  <input name="Title"
+         required="required"
+         ng-model="ctrl.name">
+  <div ng-messages="form.name.$error" 
+       ng-if="form.name.$touched">
+          <div ng-message="required">Title is required!</div>
+  </div>
+
+  <input name="Description"
+         required="required"
+         ng-model="ctrl.content">
+  <div ng-messages="form.content.$error" 
+       ng-if="form.content.$touched">
+          <div ng-message="required">Description is required!</div>
+  </div>
+
+  <input name="Studio"
+         ng-model="ctrl.studio">
+
+  <input name="Genre"
+         ng-model="ctrl.genre">
+</form>
