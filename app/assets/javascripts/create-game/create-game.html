@@ -1,10 +1,67 @@
 <div class="row">
-  <form class="col s12">
+  <form class="col s12" name="new_game">
     <div class="row">
-      <div>
-        <input id="" type="text">
-        <label for=""></label>
+
+      <div class="input-field col s12">
+        <input name="Title"
+               id="game_name"
+               type="text"
+               class="validate"
+               required="required"
+               ng-model="ctrl.name">
+        <label for="game_name">Title</label>
+        <div ng-messages="form.name.$error" 
+             ng-if="form.name.$touched">
+              <div ng-message="required">Title is required!
+              </div>
+        </div>
       </div>
+
+      <div class="input-field col s12">
+        <input name="Description"
+               id="game_description"
+               type="text"
+               class="validate"
+               required="required"
+               ng-model="ctrl.content">
+        <label for="game_description">Description</label>
+        <div ng-messages="form.content.$error" 
+             ng-if="form.content.$touched">
+              <div ng-message="required">Content is required!
+              </div>
+        </div>
+      </div>
+
+      <div class="input-field col s12">
+        <input name="Title"
+               id="game_name"
+               type="text"
+               class="validate"
+               required="required"
+               ng-model="ctrl.name">
+        <label for="game_name">Title</label>
+        <div ng-messages="form.name.$error" 
+             ng-if="form.name.$touched">
+              <div ng-message="required">Title is required!
+              </div>
+        </div>
+      </div>
+
+      <div class="input-field col s12">
+        <input name="Title"
+               id="game_name"
+               type="text"
+               class="validate"
+               required="required"
+               ng-model="ctrl.name">
+        <label for="game_name">Title</label>
+        <div ng-messages="form.name.$error" 
+             ng-if="form.name.$touched">
+              <div ng-message="required">Title is required!
+              </div>
+        </div>
+      </div>
+
     </div>
   </form>
 </div>
