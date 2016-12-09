@@ -30,3 +30,5 @@ pg2 = PlatformGame.create(platform: xbox, game: game)
 
 rating = Rating.create(game: game, user: u, rating: 10)
 review = Review.create(game: game, user: u, title: 'Witcher 3: Best Game Ever', content: 'Super dope game')
+
+game2 = Game.create(user: u, studio: s, genre: g, name: "The Witcher 2", content: 'Real cool game')
