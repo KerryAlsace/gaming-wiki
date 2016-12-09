@@ -1,5 +1,7 @@
 <div class="row">
-  <form class="col s12" name="new_game">
+  <form class="col s12" 
+        name="new_game"
+        ng-submit="$ctrl.createGame()">
     <div class="row">
 
       <div class="input-field col s12">
@@ -8,7 +10,7 @@
                type="text"
                class="validate"
                required="required"
-               ng-model="ctrl.name">
+               ng-model="$ctrl.name">
         <label for="game_name">Title</label>
         <div ng-messages="form.name.$error" 
              ng-if="form.name.$touched">
@@ -23,7 +25,7 @@
                type="text"
                class="validate"
                required="required"
-               ng-model="ctrl.content">
+               ng-model="$ctrl.content">
         <label for="game_description">Description</label>
         <div ng-messages="form.content.$error" 
              ng-if="form.content.$touched">
@@ -33,33 +35,19 @@
       </div>
 
       <div class="input-field col s12">
-        <input name="Title"
-               id="game_name"
-               type="text"
-               class="validate"
-               required="required"
-               ng-model="ctrl.name">
-        <label for="game_name">Title</label>
-        <div ng-messages="form.name.$error" 
-             ng-if="form.name.$touched">
-              <div ng-message="required">Title is required!
-              </div>
-        </div>
+        <select>
+          <option value="" disabled selected>Select a Studio</option>
+          <option ng-repeat="studio in $ctrl.studios" value="{studio.id}">{{ studio.name }}</option>
+        </select>
+        <label>Studio</label>
       </div>
 
       <div class="input-field col s12">
-        <input name="Title"
-               id="game_name"
-               type="text"
-               class="validate"
-               required="required"
-               ng-model="ctrl.name">
-        <label for="game_name">Title</label>
-        <div ng-messages="form.name.$error" 
-             ng-if="form.name.$touched">
-              <div ng-message="required">Title is required!
-              </div>
-        </div>
+        <select>
+          <option value="" disabled selected>Select a Genre</option>
+          <option ng-repeat="genre in $ctrl.genres" value="{genre.id}">{{ genre.name }}</option>
+        </select>
+        <label>Genre</label>
       </div>
 
     </div>
