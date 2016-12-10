@@ -6,7 +6,13 @@
       <div class="divider"></div>
       <div class="section">
         <h5>{{ game.name }}</h5>
+        <h6 ng-if="game.studio">{{ game.studio.name }}</h6>
+        <p ng-if="game.genre">{{ game.genre.name }}</p>
         <p>{{ game.content }}</p>
+        <p>Available on: </p>
+        <ul>
+          <li ng-repeat="platform in game.platforms">{{ platform.name }}</li>
+        </ul>
       </div>
     </li>
   </ul>

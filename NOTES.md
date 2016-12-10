@@ -114,3 +114,9 @@ Initial setup:
 - Edit bower.json as needed
 - `npm install bower -g`
 - `rails bower:install`
+
+
+TODO:
+Pull out nav panel into a component
+Include that component in each view
+change home page to just show ui-view

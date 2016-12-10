@@ -6,6 +6,13 @@
 
     ctrl.games = '';
 
+    ctrl.actions = [
+      'Create a Game Page',
+      'See Highest Rated Game',
+      'Search for a Game',
+      'Filter Games'
+    ]
+
     GameFactory
       .getGames()
       .then(function(data) {
